@@ -1,0 +1,33 @@
+/* text flipping code*/
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family:SitkaText;
+  color: darkgrey;
+  text-align: center;
+  min-height: 100vh;
+}
+
+
+.waviy {
+  position: relative;
+}
+
+.waviy span {
+  position: relative;
+  display: inline-block;
+  font-size: 45px;
+  font-weight: bold;
+  color: darkgrey;
+  animation: flip 2s infinite;
+  animation-delay: calc(.2s * var(--i))
+}
+@keyframes flip {
+  0%,80% {
+    transform: rotateY(360deg)
+  }
+}
