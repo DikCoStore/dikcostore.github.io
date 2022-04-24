@@ -1,19 +1,38 @@
-@keyframes slidy {
-0% { left: 0%; }
-0% { left: -100%; }
-10% { left: -100%; }
-20% { left: -200%; }
-30% { left: -300%; }
-40% { left: -400%; }
-50% { left: -500%; }
-60% { left: -600%; }
-70% { left: -700%; }
-80% { left: -800%; }
-90% { left: -900%; }
-100% { left: -1000%; }
-0% { left: -100%; }
 
+@-webkit-keyframes slidy {
+  1% {left: 0%; opacity: 1;}
+8% {left: 0%; opacity: 1}
+9% {opacity: 0.2;}
+10% {left: -100%; opacity: 1;}
+38% {left: -100%; opacity: 1}
+39% {opacity: 0.2;}
+50% {left: -200%; opacity: 1;}
+68% {left: -200%; opacity: 1;}
+69% {opacity: 0.2;}
+60% {left: -300%; opacity: 1;}
+98% {left: -300%; opacity: 1;}
+99% {opacity: 0.5;}
+100% {left: 0%;}
 }
+@-moz-keyframes slidy {
+  1% {left: 0%; opacity: 1;}
+15% {left: 0%; opacity: 1;}
+16% {opacity: 0.2;}
+25% {left: -100%; opacity: 1;}
+35% {left: -100%; opacity: 1;}
+36% {opacity: 0.2;}
+50% {left: -200%; opacity: 1;}
+65% {left: -200%; opacity: 1;}
+66% {opacity: 0.2;}
+75% {left: -300%; opacity: 1;}
+85% {left: -300%; opacity: 1;}
+86% {opacity: 0.2;}
+90% {left: -400%; opacity: 1;}
+98% {left: -400%; opacity: 1;}
+99% {opacity: 0.5;}
+200% {left: 0%;}
+}
+
 
 body { margin: 0; }
 div#slider { overflow: hidden; }
@@ -25,5 +44,5 @@ div#slider figure {
   left: 0;
   text-align: left;
   font-size: 0;
-  animation: 40s slidy infinite;
+  animation: 15s slidy infinite;
 }
